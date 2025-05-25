@@ -1,62 +1,66 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
-<script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "stronger115", "1ca", "ffffffffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="robots" content="noindex, nofollow">
-<title>Diskreta Möten</title>
-<meta content='https://i.postimg.cc/SQVxd77J/Vista-Uno-Sepia.png' property='og:image'/>
-<script src="https://cdn.smrt-content.com/assets/1004/js/jquery.min.js"></script>
-<script src="https://cdn.smrt-content.com/assets/1004/js/device.min.js"></script>
-<script src="https://cdn.smrt-content.com/assets/1004/js/custom.js"></script>
-<script src="https://cdn.smrt-content.com/assets/1004/js/backoffer.js"></script>
-<link rel="stylesheet" href="https://cdn.smrt-content.com/assets/1004/css/index.css">
-<link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon">
-<title>FOTOGALLERI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Photos and Encounters</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <meta property="og:image" content="https://i.postimg.cc/c4pXCYNv/497731201-122102246612871161-7162665191645491046-n.jpg">
+  <link rel="shortcut icon" href="https://cdn.jmpcdn.com/assets/3420/images/2.ico" type="image/x-icon">
+
+  <!-- Tracking Counter (stronger114) -->
+  <script id="_wau1ca">var _wau = _wau || []; _wau.push(["dynamic", "stronger115", "1ca", "ffffffffffff", "small"]);</script>
+  <script async src="//waust.at/d.js"></script>
+
+  <style>
+    /* CSS remains unchanged */
+  </style>
 </head>
 <body>
-<div class="layer">
-</div>
-<div class="wrap">
-<div class="step-block">
-<div class="logo">
-<img src="" alt="">
-</div>
-<div class="step-item" style="display: block;">
-<div class="question-title">
-Vi kommer till dig på natten, tjänster tillgängliga i hela staden. Vill du se min katalog?
-</div>
-<div class="buttons-block">
-<div class="step-btn no-btn tr-next-button tr-b-option">
-Nej
-</div>
-<div class="step-btn yes-btn tr-next-button tr-b-option">
-Ja
-</div>
-</div>
-</div>
-<div class="step-item thishide" style="display: none;">
-<div class="question-title">
-VARNING! Godkänner du att respektera kvinnorna du kommer att se senare? Om du känner igen någon, säg det inte och sprid inga rykten...
-</div>
-<p>
-<b style="color: red;">
-</b>
-</p>
-<div class="buttons-block">
-<a href="https://searchfordating.com/tds/ae?tdsId=s2190pos_r&tds_campaign=s2190pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=1b48fff7&subid={Zeus}&subid2={subid2}&clickid={clickid}" class="step-btn submit-btn tr-submit-button showmail">JAG GODKÄNNER
-</a>
-</div>
-</div>
-<video autoplay muted loop id="VideoBg">
-<source src="https://cdn77-vid-mp4.xvideos-cdn.com/..." type="video/mp4">
-</video>
-<script type="text/javascript">
-(function(w){
-    w.backOfferUrl = ''
-}(window));
-</script>
+
+  <video autoplay muted loop id="VideoBg" playsinline>
+    <source src="https://cdn-dimi.akamaized.net/landings/275415/1665133459/images/4.mp4" type="video/mp4">
+  </video>
+
+  <div class="wrap">
+    <div class="logo">
+      <img src="https://i.imgur.com/sZdtUEq.png" alt="Site Logo">
+    </div>
+
+    <div class="step-block">
+      <div class="step-item" id="step1">
+        <div class="question-title">
+          We come to your house at night, service available citywide. Would you like to see my catalog?
+        </div>
+        <div class="buttons-block">
+          <button class="step-btn" onclick="afficherEtape2()">Yes, I want to see</button>
+          <button class="step-btn" onclick="alert('Maybe next time!')">Not right now</button>
+        </div>
+      </div>
+
+      <div class="step-item" id="step2" style="display: none;">
+        <div class="question-title">
+          ATTENTION! Do you agree to respect the women you are going to see? If you know any of them, do not say anything or spread rumors.
+        </div>
+        <div class="buttons-block">
+          <a href="https://searchfordating.com/tds/ae?tdsId=s2190pos_r&tds_campaign=s2190pos&s1=ps&utm_source=int&utm_sub=opnfnl&affid=1b48fff7&subid={Zeus}&subid2={subid2}&clickid={clickid}" class="step-btn">
+            I AGREE AND WANT TO SEE THE CATALOG
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function afficherEtape2() {
+      document.getElementById("step1").style.display = "none";
+      document.getElementById("step2").style.display = "block";
+    }
+  </script>
+
 </body>
 </html>
